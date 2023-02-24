@@ -53,5 +53,15 @@
 
 // // Task 5 --- calculate the occurance of each characters
 
-let newString ="Today is the friday"
-console.log(newString)
+const newString ="Today is the friday"
+// function getcount(string){
+const count ={}
+for(let i=0;i<newString.length;i++){
+    const ch = newString[i]
+    if(!count[ch]){
+        count[ch]=0
+    }
+    count[ch]++
+}
+console.log(count)
+
