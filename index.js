@@ -48,3 +48,7 @@ console.log("\n")
 let todaysDate = new Date()
 let string =  `Today's date is ${todaysDate.getDate()}.${todaysDate.getMonth()}.${todaysDate.getFullYear()} & time is ${todaysDate.getHours()}:${todaysDate.getMinutes()}:${todaysDate.getSeconds()} ${todaysDate.getHours()>=12?"Am":"Pm"}`
 console.log(string)
+
+
+
+// Task 5 --- calculate the occurance of each characters
