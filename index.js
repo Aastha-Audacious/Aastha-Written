@@ -51,17 +51,43 @@
 
 
 
-// // Task 5 --- calculate the occurance of each characters
+//Task 5 --- calculate the occurance of each characters
 
-const newString ="Today is the friday"
-// function getcount(string){
-const count ={}
-for(let i=0;i<newString.length;i++){
-    const ch = newString[i]
-    if(!count[ch]){
-        count[ch]=0
+// const newString ="today is the friday"
+// const count ={}
+// for(let i=0;i<newString.length;i++){
+//     const ch = newString[i]
+//     if(!count[ch]){
+//         count[ch]=0
+//     }
+//     count[ch]++
+// }
+// console.log(count)
+
+
+
+//Task 6 --- calculate the occurance of each characters
+const str ="Dwarkapuri Indore"
+// function maxChar(str){
+    let freqcount ={}
+    let nwstr = str.toLowerCase()
+
+    for(let char of nwstr){
+        freqcount[char] = freqcount[char]+1 || 1
     }
-    count[ch]++
-}
-console.log(count)
 
+    let maxCount =0
+    let maxChar = null
+    for(let key in freqcount){
+        if(freqcount[key]>maxCount){
+            maxCount = freqcount[key]
+            maxChar=key
+        }
+    }
+    console.log(maxChar)
+    // return maxChar
+// }
+// console.log(maxChar("Dwarkapuri indore"))
+
+const result = str.replaceAll(maxChar, "z")
+console.log(result)
